@@ -140,17 +140,6 @@ fun Card(item: Int) {
 }
 
 @Composable
-fun MyBox(
-        modifier: Modifier = Modifier,
-        content: @Composable() () -> Unit
-) {
-    Layout(children = { Box(modifier) }) { _, constraints ->
-        Log.v("TESTTEST", "LAYOUT $constraints")
-        layout(0, 0) {}
-    }
-}
-
-@Composable
 fun CoverImage() {
     val imageUrl = "https://picsum.photos/id/1/400/700"
 
